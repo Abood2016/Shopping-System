@@ -1,1 +1,1 @@
-<h2>Shopping System</h2>
+<h2>Shopping System.</h2>
