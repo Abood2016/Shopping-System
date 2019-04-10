@@ -6,11 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateAdminUsersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::create('admin_users', function (Blueprint $table) {
