@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//dashboard routs
+Route::get('/', 'DashboardController@index');
+
+
+//products routs
+Route::group(['prefix' => 'products'] , function(){
+Route::get('/create','ProductController@create');
+Route::post('/store','ProductController@store')->name('product.store');
+
 });
