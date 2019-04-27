@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/favicon.png')}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>Shopping Admin</title>
@@ -22,6 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 
     <link href="{{asset('assets/css/themify-icons.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/imageStyle.css')}}" rel="stylesheet">
 
 </head>
 <body>
@@ -104,4 +105,5 @@
 
 <script src="{{asset('assets/js/jquery-1.10.2.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/script.js')}}"    type="text/javascript"></script>
 </html>
