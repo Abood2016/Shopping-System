@@ -26,13 +26,12 @@ class ProductController extends Controller
            'image' => 'image|required'
        ]);
 
-        //upload image
+        //upload image 
         if($request->hasFile('image'))
         {
             $image = $request->image;
             $image->move('uploads' , $image->getClientOriginalName());    
         }
-
         $porduct = Product::create([
             'name' => $request->name,
             'price' => $request->price,

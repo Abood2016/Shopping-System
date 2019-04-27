@@ -1,6 +1,5 @@
 @extends('admin.layouts.master')
 
-
 @section('page')
    Add Product
 @endsection
@@ -39,9 +38,9 @@
                                             <div class="form-group">
                                                 <label>Product Description:</label>
                                                 <textarea name="description" id="" cols="30" rows="10"
-                                                          class="form-control border-input" placeholder="Product Description"></textarea>
+                                                class="form-control border-input" placeholder="Product Description">
+                                                </textarea>
                                             </div>
-
                                             <div class="form-group">
                                                 <label>Product Image:</label>
                                                 <input type="file" name="image" class="form-control border-input">
