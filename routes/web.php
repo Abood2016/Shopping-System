@@ -19,5 +19,6 @@ Route::get('/', 'DashboardController@index');
 Route::group(['prefix' => 'products'] , function(){
 Route::get('/create','ProductController@create');
 Route::post('/store','ProductController@store')->name('product.store');
-
+Route::get('/delete','ProductController@destroy');
+Route::get('/edit','ProductController@edit');
 });
