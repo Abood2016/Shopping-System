@@ -2,14 +2,14 @@
 
 <div class="sidebar-wrapper">
     <div class="logo">
-        <a href="" class="simple-text">
+        <a href="{{route('index')}}" class="simple-text">
             Shop Admin
         </a>
     </div>
 
     <ul class="nav">
         <li>
-            <a href="">
+            <a href="{{route('index')}}">
                 <i class="ti-panel"></i>
                 <p>Dashboard</p>
             </a>

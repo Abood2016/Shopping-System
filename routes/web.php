@@ -12,7 +12,7 @@
 */
 
 //dashboard routs
-Route::get('/', 'DashboardController@index');
+Route::get('/', 'DashboardController@index')->name('index');
 
 
 //products routs
@@ -22,4 +22,7 @@ Route::post('/store','ProductController@store')->name('product.store');
 Route::get('/','ProductController@index')->name('product.index');
 Route::post('/delete/{id}','ProductController@destroy')->name('product.destroy');
 Route::get('/edit/{id}','ProductController@edit')->name('product.edit');
+Route::put('/update/{id}','ProductController@update')->name('product.update');
+Route::get('/show/{id}','ProductController@show')->name('product.show');
+
 });
