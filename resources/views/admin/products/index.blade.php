@@ -44,7 +44,7 @@
                                             {{csrf_field()}}
                                             <!-- {{method_field('DELETE')}} -->
                                          </form>
-                                            <a href="" onclick="if(confirm('Are You Surem, you want to delete ?')){
+                                            <a href="" onclick="if(confirm('Are You Sure, you want to delete ?')){
                                                     event.preventDefault();
                                             document.getElementById('delete-form-{{$product->id }}').submit();
                                                     }
@@ -53,8 +53,7 @@
                                             }"><span class="btn btn-sm btn-danger ti-trash" title="Delete"></span></a>
                                      
                                      <a href = "{{route('product.edit',['id' => $product->id])}}" class="btn btn-sm btn-info ti-pencil-alt" title="Edit"></a>  
-
-                                 <button class="btn btn-sm btn-primary ti-view-list-alt" title="Details"></button> 
+                                     <a href = "{{route('product.show',['id' => $product->id])}}" class="btn btn-sm btn-primary ti-view-list-alt" title="Edit"></a>                   
                     </td>
                 </tr>
                @endforeach
