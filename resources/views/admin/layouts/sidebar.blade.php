@@ -27,7 +27,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{route('order.index')}}">
                 <i class="ti-calendar"></i>
                 <p>Orders</p>
             </a>
