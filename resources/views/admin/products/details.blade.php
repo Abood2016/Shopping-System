@@ -50,15 +50,16 @@
 
                     <tr>
                         <th>Image</th>
-                        <td><img src="{{asset('uploads/') .'/' .$product->image}}" alt="" class="img-thumbnail" style="width: 150px;"></td>
+                        <td><a href="{{asset('uploads/') .'/' .$product->image}}" target="_blank"><img src="{{asset('uploads/') .'/' .$product->image}}" alt="" class="img-thumbnail" style="width: 150px;"> </a></td>
                     </tr>
 
-                </tbody>
-
-            </table>
-
+                    </tbody>
+                </table>
+                </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div
+        <a href="{{ route('product.index')}}" class="btn btn-dark" >Back To Products</a>
+
+
 @endsection

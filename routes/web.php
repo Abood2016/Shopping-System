@@ -24,5 +24,15 @@ Route::post('/delete/{id}','ProductController@destroy')->name('product.destroy')
 Route::get('/edit/{id}','ProductController@edit')->name('product.edit');
 Route::put('/update/{id}','ProductController@update')->name('product.update');
 Route::get('/show/{id}','ProductController@show')->name('product.show');
+});
+
+//Order routs
+Route::group(['prefix' => 'orders'] , function(){
+
+Route::get('/confirm/{id}','OrderController@confirm')->name('order.confirm');    
+Route::get('/pending/{id}','OrderController@pending')->name('order.pending');    
+Route::get('/show/{id}','OrderController@show')->name('order.show');    
+
+Route::get('/','OrderController@index')->name('order.index');
 
 });
