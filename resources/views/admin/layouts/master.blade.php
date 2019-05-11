@@ -73,37 +73,20 @@
                 <nav class="pull-left">
                     <ul>
 
-                        <li>
-                            <a href="">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Licenses
-                            </a>
-                        </li>
+                        
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
                     &copy;
                     <script>document.write(new Date().getFullYear())</script>
-                    , made with <i class="fa fa-heart heart"></i> by <a href="">Javed</a>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="https://www.facebook.com/lkhoya.l3aziz5" target="_blanck">AbedElRahman</a>
                 </div>
             </div>
         </footer>
 
     </div>
 </div>
-
 </body>
-
-   
 <script src="{{asset('assets/js/jquery-1.10.2.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/js/script.js')}}"    type="text/javascript"></script>
