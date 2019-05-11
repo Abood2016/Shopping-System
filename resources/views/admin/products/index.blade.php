@@ -18,7 +18,6 @@
         </div>
         <div class="content table-responsive table-full-width">
             <table class="table table-striped">
-                <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -27,7 +26,6 @@
                     <th>Image</th>
                     <th>Actions</th>
                 </tr>
-                </thead>
                 <tbody>
                     @if($products->count() > 0)
 

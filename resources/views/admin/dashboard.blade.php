@@ -5,31 +5,6 @@
 @endsection
 
 @section('content')
-<div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-warning text-center">
-                                            <i class="ti-eye"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Total Visitors</p>
-                                            11022
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr/>
-                                    <div class="stats">
-                                        <i class="ti-panel"></i> Details
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <div class="content">
@@ -42,14 +17,14 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Products</p>
-                                            $1,345
+                                            {{ $product->count() }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
                                     <hr/>
                                     <div class="stats">
-                                        <i class="ti-panel"></i> Details
+                                       <a href="{{route('product.index')}}"> <i class="ti-panel"></i> Products</a>
                                     </div>
                                 </div>
                             </div>
@@ -67,14 +42,14 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Orders</p>
-                                            23
+                                            {{ $order->count() }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
                                     <hr/>
                                     <div class="stats">
-                                        <i class="ti-panel"></i> Details
+                                       <a href="{{route('order.index')}}"> <i class="ti-panel"></i> Orders</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,14 +67,14 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Users</p>
-                                            45
+                                            {{ $user->count() }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
                                     <hr/>
                                     <div class="stats">
-                                        <i class="ti-panel"></i> Details
+                                    <a href="{{route('user.index')}}"> <i class="ti-panel"></i> Users</a>
                                     </div>
                                 </div>
                             </div>
