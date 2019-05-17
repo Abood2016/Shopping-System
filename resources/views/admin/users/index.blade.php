@@ -37,7 +37,7 @@
                                         <span class="label label-success">Active</label>
 
                                          @else
-                                        <span class="label label-warning">Block</label>
+                                        <span class="label label-warning">Blocked</label>
 
                                             @endif
                                       </td>
