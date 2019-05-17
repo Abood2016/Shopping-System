@@ -15,22 +15,22 @@ class RedirectIfAuthenticated
      * @param  string|null  $guard
      * @return mixed
      */
+
     public function handle($request, Closure $next, $guard = null)
     {
+        //add guard
         switch ($guard) {
             case 'admin':
                 if (Auth::guard($guard)->check()) {
                     return redirect('/admin');
                 }
             break;
-
             default:
                 if (Auth::guard($guard)->check()) {
                     return redirect('/user/profile');
                 }
             break;
         }
-
         return $next($request);
     }
 }
