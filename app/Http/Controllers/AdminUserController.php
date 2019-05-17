@@ -30,7 +30,7 @@ class AdminUserController extends Controller
 
         if (! Auth::guard('admin')->attempt($credentials)) {
             return back()->withErrors([
-                'message' => 'Wrong Email or Password Please try again'
+                'message' => 'Wrong Email or Password, Please try again'
             ]);
         }
 
