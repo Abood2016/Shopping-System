@@ -4,8 +4,6 @@
     Orders
 @endsection
 
-
-
 @section('content')
 
 <div class="row">
@@ -48,7 +46,6 @@
 
                                         @endforeach
                                     </td>
-
                                     <td> 
                                     @if($order->status)   
                                     <span class="label label-success">Confirmed</span>

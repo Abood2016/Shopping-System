@@ -11,9 +11,12 @@
 |
 */
 
-//dashboard routs
-Route::get('/', 'DashboardController@index')->name('index');
+Route::group(['prefix' => 'admin'], function(){
 
+Route::group(['middleware' => ['auth:admin']], function () {
+
+    //dashboard routs
+Route::get('/', 'DashboardController@index')->name('index');
 
 //products routes
 Route::group(['prefix' => 'products'] , function(){
@@ -35,10 +38,20 @@ Route::get('/','OrderController@index')->name('order.index');
 });
 
 //User routes
-
 Route::group(['prefix' => 'users'],function(){
 Route::get('/','UserController@index')->name('user.index');
 Route::get('/active/{id}','UserController@active')->name('user.active');
 Route::get('/block/{id}','UserController@block')->name('user.block');
 Route::get('/show/{id}','UserController@show')->name('user.show');
+});
+
+      // Logout
+      Route::get('/logout','AdminUserController@logout')->name('logout');
+      
+});
+
+//login routes
+Route::get('login','AdminUserController@index');
+Route::post('login','AdminUserController@store')->name('admin.store');
+
 });

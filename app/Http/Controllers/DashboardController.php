@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Order;
 use App\Product;
+
 class DashboardController extends Controller
 {
+
 
     public function index()
     {
