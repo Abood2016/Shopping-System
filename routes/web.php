@@ -18,6 +18,11 @@ Route::group(['middleware' => ['auth:admin']], function () {
     //dashboard routs
 Route::get('/', 'DashboardController@index')->name('index');
 
+//admin profile routes
+Route::get('profile', 'ProfileController@profile')->name('profile.index');
+Route::get('profile/edit/{id}', 'ProfileController@edit')->name('profile.edit');
+Route::put('profile/update/{id}', 'ProfileController@update')->name('admin.update');
+
 //products routes
 Route::group(['prefix' => 'products'] , function(){
 Route::get('/create',['uses' => 'ProductController@create','as' => 'product.create']);
@@ -46,7 +51,7 @@ Route::get('/show/{id}','UserController@show')->name('user.show');
 });
 
       // Logout
-      Route::get('/logout','AdminUserController@logout')->name('logout');
+    Route::get('/logout','AdminUserController@logout')->name('logout');
       
 });
 
@@ -55,3 +60,7 @@ Route::get('login','AdminUserController@index');
 Route::post('login','AdminUserController@store')->name('admin.store');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -25,6 +25,7 @@
                                         <th>Actions</th>
                                     </tr>
                                     <tbody>
+                                        @if($users->count() > 0)
                                  @foreach($users as $user)       
                                     <tr>
                                         <td>{{ $user->id }}</td>
@@ -56,6 +57,11 @@
                                         </tr>
 
                                     @endforeach
+                                    @else
+                                    <tr>
+                            <th colspan="8" class="text-center">No Users yet</th>
+                                </tr>
+                            @endif
                                     </tbody>
                                 </table>
 
