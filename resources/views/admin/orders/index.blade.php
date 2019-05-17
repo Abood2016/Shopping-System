@@ -25,6 +25,7 @@
                                         <th>Actions</th>
                                     </tr>
                                     <tbody>
+                                    @if($orders->count() > 0)
                                     <tr>
 
                                     @foreach($orders as $order)
@@ -71,10 +72,13 @@
                                             
                                         </td>
                                     </tr>
-
                                     <tr>
                                     @endforeach
-                                    
+                                    @else
+                                    <tr>
+                            <th colspan="8" class="text-center">No Orders yet</th>
+                                </tr>
+                            @endif
 
                                     </tbody>
                                 </table>

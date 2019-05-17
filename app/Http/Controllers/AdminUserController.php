@@ -30,7 +30,7 @@ class AdminUserController extends Controller
 
         if (! Auth::guard('admin')->attempt($credentials)) {
             return back()->withErrors([
-                'message' => 'Wrong credentials please try again'
+                'message' => 'Wrong Email or Password Please try again'
             ]);
         }
 
@@ -43,9 +43,8 @@ class AdminUserController extends Controller
 
     public function logout() {
         auth()->guard('admin')->logout();
-
-
-        return redirect('admin/login')->with('success','You have been logged out');
+      return redirect('admin/login')->with('success','You have been logged out');
     }
 
+    
 }
