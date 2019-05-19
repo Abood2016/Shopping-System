@@ -40,7 +40,7 @@
         <form  action="{{route('admin.store')}}" method="POST">
           @csrf
           @if($errors->any())
-            <div class="alert alert-danger" style="color:red">
+            <div class="alert alert-danger" style="color:red;">
               <ul>
                 @foreach($errors->all() as $error)
                   <li>{{ $error }}</li>
@@ -57,7 +57,6 @@
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" class="form-control" placeholder="email" name="email">
-
           </div>
           <div class="input-group form-group">
             <div class="input-group-prepend">
@@ -74,7 +73,7 @@
           </div>
         </form>
       </div>
-      
+
     </div>
   </div>
 </div>
