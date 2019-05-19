@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Page</title>
+  <title>Login</title>
   <!--Made with love by Mutiullah Samim -->
 
   <!--Bootsrap 4 CDN-->
@@ -53,7 +53,7 @@
           @endif
           <div class="input-group form-group">
             <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
             <input type="text" class="form-control" placeholder="email" name="email">
 
