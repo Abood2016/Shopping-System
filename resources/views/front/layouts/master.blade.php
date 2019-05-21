@@ -27,12 +27,33 @@
 <div class="container">
 
     <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-        <h5 class="display-3"><strong>Welcome,</strong></h5>
-        <p class="display-4"><strong>SALE UPTO 50%</strong></p>
-        <p class="display-4">&nbsp;</p>
-        <a href="#" class="btn btn-warning btn-lg float-right">SHOP NOW!</a>
-    </header>
+    <header class="">
+        
+        <div class="body">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+             </ol>
+    
+    <div class="carousel-inner" role="listbox"> 
+        <div class="carousel-item active">
+    </div>
+        <div id="target" class="carousel-item"></div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+  </header>
 
 
     @yield('content')
@@ -63,6 +84,9 @@
         </footer>
 </body>
 
-
-
 </html>
+
+<script>
+    $('.carousel').carousel();
+
+</script>

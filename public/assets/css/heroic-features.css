@@ -14,7 +14,7 @@ body {
 
 .jumbotron {
     margin-bottom: 0;
-    background-image: url('../img/banner2.jpg');
+    /* background-image: url('../img/banner2.jpg'); */
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,3 +57,34 @@ body {
     color: #666;
     vertical-align: middle;
 }
+
+
+.carousel .carousel-item {
+    width: 1200px;
+    margin-bottom: 0;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em .5em;
+    margin: 5vh 5vh 5vh 0vh;
+    border-radius: 5px;
+}
+.carousel .carousel-item:first-of-type {
+    background-image: url('../img/banner2.jpg');
+}
+
+.carousel .carousel-item:nth-of-type(1) {
+    background-image: url('../img/banner.jpg');
+}
+.carousel .carousel-item:nth-of-type(2) {
+    background-image: url('../img/banner2.jpg');
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 80px;
+    height: 70px;
+}
+
