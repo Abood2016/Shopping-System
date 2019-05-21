@@ -64,3 +64,8 @@ Route::post('login','AdminUserController@store')->name('admin.store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//Front controller
+Route::get('/','Front\homeController@index');
