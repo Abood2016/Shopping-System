@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Page</title>
+  <title>Login</title>
   <!--Made with love by Mutiullah Samim -->
 
   <!--Bootsrap 4 CDN-->
@@ -40,7 +40,7 @@
         <form  action="{{route('admin.store')}}" method="POST">
           @csrf
           @if($errors->any())
-            <div class="alert alert-danger" style="color:red">
+            <div class="alert alert-dark" style="color:red">
               <ul>
                 @foreach($errors->all() as $error)
                   <li>{{ $error }}</li>
@@ -48,13 +48,12 @@
               </ul>
             </div>
           @endif
-
           @if ( session()->has('success') )
             <div class="alert alert-success">{{ session()->get('success') }}</div>
           @endif
           <div class="input-group form-group">
             <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
             </div>
             <input type="text" class="form-control" placeholder="email" name="email">
 
@@ -85,70 +84,3 @@
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{{--<!DOCTYPE html>--}}
-{{--<html lang="en" dir="ltr">--}}
-  {{--<head>--}}
-    {{--<meta charset="utf-8">--}}
-    {{--<title>Login </title>--}}
-  {{--</head>--}}
-  {{--<body>--}}
-  {{--<div class="panel-body">--}}
-
-{{--<form class="box" action="{{route('admin.store')}}" method="POST">--}}
-{{--@csrf--}}
-  {{--<h1>Login</h1>--}}
-  {{--@if($errors->any())--}}
-    {{--<div class="alert alert-danger" style="color:red">--}}
-        {{--<ul>--}}
-            {{--@foreach($errors->all() as $error)--}}
-            {{--<li>{{ $error }}</li>--}}
-            {{--@endforeach--}}
-        {{--</ul>--}}
-    {{--</div>--}}
-{{--@endif--}}
-
-{{--@if ( session()->has('success') )--}}
-    {{--<div class="alert alert-success">{{ session()->get('success') }}</div>--}}
-{{--@endif--}}
-  {{--<input type="text" name="email" placeholder="Email">--}}
-  {{--<input type="password" name="password" placeholder="Password">--}}
-  {{--<input type="submit"  value="Login">--}}
-{{--</form>--}}
-  {{--</body>--}}
-{{--</html>--}}
-
-{{--</div>--}}
