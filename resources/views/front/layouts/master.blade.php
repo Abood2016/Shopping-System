@@ -78,7 +78,7 @@
                 <div class="copyright pull-right">
                     &copy;
                     <script>document.write(new Date().getFullYear())</script>
-                    , made with <i class="fa fa-heart heart"></i> by <a href="https://www.facebook.com/lkhoya.l3aziz5" target="_blanck">AbedElRahman</a>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="#" >DarkCode</a>
                 </div>
             </div>
         </footer>
