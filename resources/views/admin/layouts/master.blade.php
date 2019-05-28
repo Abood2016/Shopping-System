@@ -79,8 +79,7 @@
                 <div class="copyright pull-right">
                     &copy;
                     <script>document.write(new Date().getFullYear())</script>
-                    , made with <i class="fa fa-heart heart"></i> by <a href="https://www.facebook.com/lkhoya.l3aziz5" target="_blanck">AbedElRahman</a><a href="https://www.facebook.com/trq98" target="_blanck">ThaerQanoo</a><a href="https://www.facebook.com/yaseen.enaya.14" target="_blanck">Yaseen Ahmed</a>
-                </div>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="https://www.facebook.com/lkhoya.l3aziz5" target="_blanck">DarkCode</a>                </div>
             </div>
         </footer>
 
