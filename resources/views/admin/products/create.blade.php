@@ -23,7 +23,7 @@
                                                 <span class="text-danger">{{ $errors->has('name') ? $errors->first('name') : ''}}</span>
                                             </div>
 
-                                            <div class="form-group {{$errors->has('price') ? 'has-error' : ''}}>
+                                            <div class="form-group {{$errors->has('price') ? 'has-error' : ''}}">
                                                 <label>Product Price:</label>
                                                 <input type="text" name = "price" class="form-control border-input" placeholder="$2500">
                                                 <span class="text-danger">{{ $errors->has('price') ? $errors->first('price') : ''}}</span>
