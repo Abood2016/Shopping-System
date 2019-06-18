@@ -66,6 +66,23 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
 //Front controller
 Route::get('/','Front\homeController@index');
+
+//user Registration
+Route::get('/user/register','Front\RegisterController@index');
+Route::post('/user/register','Front\RegisterController@store')->name('user.register');
+
+//user login
+Route::get('user/login','Front\UserLoginController@index');
+Route::post('user/login','Front\UserLoginController@store')->name('user.login');
+
+Route::get('user/logout','Front\UserLoginController@logout')->name('user.logout');
+
+//edit user
+Route::get('user/edit/{id}','Front\RegisterController@edit')->name('user.edit');
+Route::post('user/update/{id}','Front\RegisterController@update')->name('user.update');
+
+Route::get('user/profile','Front\UserProfileController@index')->name('user.profile');
+
+Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.show');
