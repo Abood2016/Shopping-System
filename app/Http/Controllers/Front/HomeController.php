@@ -11,7 +11,7 @@ class HomeController extends Controller
     
     public function index()
     {
-        $products = Product::inRandomOrder()->take(8)->get();
+        $products = Product::inRandomOrder()->take(12)->get();
         return view('front.index',compact('products'));
     }
 }
