@@ -20,7 +20,7 @@ class UserProfileController extends Controller
    public function show($id)
    {
        
-       return view('front.Profile.index',compact('user'));
+       /*return view('front.Profile.index',compact('user'));*/
    }
   
 

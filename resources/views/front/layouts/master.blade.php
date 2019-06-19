@@ -136,9 +136,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">

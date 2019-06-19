@@ -85,4 +85,4 @@ Route::post('user/update/{id}','Front\RegisterController@update')->name('user.up
 
 Route::get('user/profile','Front\UserProfileController@index')->name('user.profile');
 
-Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.show');
+Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.Profileshow');
