@@ -52,7 +52,8 @@
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Log in</button>
         </div>
-    <p class="text-center"><a href="#">Create an Account</a></p>
+    <!-- <p class="text-center"><a href="{{ route('userRegiater') }}">Create New Account?</a></p> -->
+    <div class="text-center">Create New Account?<a href="{{ route('userRegiater') }}"> Sign up</a></div>
            
     </form>
 </div>

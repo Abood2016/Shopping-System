@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Front;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 
@@ -57,20 +58,12 @@ class RegisterController extends Controller
                 'name' => 'required',
                 'email' => 'required',
                 'address' => 'required',
-                'password' => 'required|confirmed',
             ]);
-
-            if ($request->has('password'))
-            {
-                $user ->password = bcrypt($request->password);
-            }
-
             $user->update([
                 'name' =>$request->name,
                 'email' =>$request->email,
                 'address' =>$request->address,
             ]);
-
         Session::flash('success','User Updated Successfully');
 
             return redirect()->route('user.profile');
@@ -78,3 +71,16 @@ class RegisterController extends Controller
     }
 
 }
+    // $newPassword = $request->only('password');
+
+            
+
+            // if(empty($newPassword)){
+
+            //     $user->update($request->except('password'));
+
+            // }elseif ($request->has('password')){
+            //     // if ($request->has('password'))
+            //     // {
+            //         $user ->password = bcrypt($request->password);
+            //     // }

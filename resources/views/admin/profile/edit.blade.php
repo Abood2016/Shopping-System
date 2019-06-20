@@ -30,11 +30,6 @@
                                                 <span class="text-danger">{{ $errors->has('email') ? $errors->first('email') : ''}}</span>
                                             </div>
 
-                                            <div class="form-group {{$errors->has('password') ? 'has-error' : ''}} ">
-                                                <label>Password :</label>
-                                                <input type="password" name = "password" class="form-control border-input"  value="{{$admin->password}}">
-                                                <span class="text-danger">{{ $errors->has('password') ? $errors->first('password') : ''}}</span>
-                                            </div>
                                        </div>
                                 </div>
                                     <div class="">

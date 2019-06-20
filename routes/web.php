@@ -70,11 +70,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/','Front\homeController@index');
 
 //user Registration
-Route::get('/user/register','Front\RegisterController@index');
+Route::get('/user/register','Front\RegisterController@index')->name('userRegiater');
 Route::post('/user/register','Front\RegisterController@store')->name('user.register');
 
 //user login
-Route::get('user/login','Front\UserLoginController@index');
+Route::get('user/login','Front\UserLoginController@index')->name('userLogin');
 Route::post('user/login','Front\UserLoginController@store')->name('user.login');
 
 Route::get('user/logout','Front\UserLoginController@logout')->name('user.logout');
@@ -85,4 +85,4 @@ Route::post('user/update/{id}','Front\RegisterController@update')->name('user.up
 
 Route::get('user/profile','Front\UserProfileController@index')->name('user.profile');
 
-Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.show');
+Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.Profileshow');
