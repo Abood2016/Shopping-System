@@ -36,11 +36,6 @@ class ProfileController extends Controller
                 'email' => 'required',
             ]);
 
-            if ($request->has('password'))
-            {
-                $admin ->password = bcrypt($request->password);
-            }
-
             $admin->update([
                 'name' =>$request->name,
                 'email' =>$request->email,

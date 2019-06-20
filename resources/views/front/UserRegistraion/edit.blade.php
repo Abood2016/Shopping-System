@@ -18,14 +18,6 @@
             <input type="text" class="form-control" name="address" placeholder="Address" value="{{$user->address}}">
             <span class="text-danger">{{ $errors->has('address') ? $errors->first('address') : ''}}</span>
         </div>
-		<div class="form-group {{$errors->has('password') ? 'has-error' : ''}}">
-            <input type="password" class="form-control" name="password" placeholder="Password" value="{{$user->password}}">
-            <span class="text-danger">{{ $errors->has('password') ? $errors->first('password') : ''}}</span>
-        </div>
-        <div class="form-group {{$errors->has('password') ? 'has-error' : ''}}">
-            <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" value="{{$user->password}}">
-            <span class="text-danger">{{ $errors->has('password') ? $errors->first('password') : ''}}</span>
-        </div>
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" style="background-color:#4A5678 !important">Update</button>
         </div>

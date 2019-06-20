@@ -29,7 +29,7 @@
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" style="background-color:#4A5678 !important">Register Now</button>
         </div>
-        <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+        <div class="text-center">Already have an account? <a href="{{ route('userLogin') }}">Sign in</a></div>
 
     </form>
 </div>
