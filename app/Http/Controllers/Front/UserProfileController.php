@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Order;
 use App\Http\Controllers\Controller;
 
 class UserProfileController extends Controller
@@ -19,8 +20,8 @@ class UserProfileController extends Controller
 
    public function show($id)
    {
-       
-       /*return view('front.Profile.index',compact('user'));*/
+        $orders = Order::find($id);       
+       return view('front.Profile.OrderDetails',compact('orders'));
    }
   
 

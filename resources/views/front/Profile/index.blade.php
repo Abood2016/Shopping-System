@@ -81,9 +81,9 @@
 
                                      </td>
                                     <td>
-                                    <a href="{{ route('user.show',['id' => $order->id]) }}" class="btn btn-outline-dark btn-sm"
+                                    <a href="{{ route('user.Profileshow',['id' => $order->id]) }}" class="btn btn-outline-dark btn-sm"
                                                     title="details">Details</a> 
-                                    <!-- <a href="{{ route('user.show',['id' => $order->id]) }}">Details<i class="btn btn-outline-dark btn-sm"></i> </a> -->
+                                    <!-- <a href="{{ route('user.Profileshow',['id' => $order->id]) }}">Details<i class="btn btn-outline-dark btn-sm"></i> </a> -->
 
                                     </td>
                                     </tr>
