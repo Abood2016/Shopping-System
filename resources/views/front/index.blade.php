@@ -40,7 +40,8 @@
             <div class="imge" style="background-image: url('{{asset('/uploads') . '/' . $product->image }}');width: 100%;
     min-height: 150px;
     background-position: center;
-    background-size: cover;"><img class="card-img-top" src="" alt=""></div>
+        background-size: contain;
+    background-repeat: no-repeat;"><img class="card-img-top" src="" alt=""></div>
             <div class="card-body">
                 <h5 class="card-title">{{ $product->name }}</h5>
                 <p class="card-text">
