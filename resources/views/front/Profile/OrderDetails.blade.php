@@ -11,7 +11,7 @@
                     
                             <h4 class="title">Order Details</h4>
                         <div class="content table-responsive table-full-width">
-                            <table class="table table-border table-striped">
+                            <table class="table table-bordered table-striped">
                                 <tr>
                                     <th>ID</th>
                                     <th>Date</th>
@@ -19,7 +19,6 @@
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                                 <tbody>
                                     <tr>
@@ -30,21 +29,13 @@
                                         <td> {{$orders->OrderItem[0]->quantity }} </td>
                                         <td>
                                         @if($orders->status)   
-                                                    <span class="label label-success">Confirmed</span>
+                                                    <span class="badge badge-success">Confirmed</span>
 
                                                     @else
-                                                    <span class="label label-warning">Pending</span>       
+                                                    <span class="badge badge-warning">Pending</span>       
                                                     @endif     
                                         </td>
-                                        <td>
-                                          @if($orders->status)
-                                            <a href="{{ route('order.pending',['id' => $orders->id]) }}" class="btn btn-warning btn-sm"
-                                                        title="Pending">Pending</a>
-                                                @else
-                                                    <a href="{{ route('order.confirm',['id' => $orders->id]) }}" class="btn btn-success btn-sm"
-                                                    title="Confirm">Confirm</a>
-                                            @endif 
-                                              </td>
+                                        
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -54,7 +45,7 @@
                     <div class="col-md-12">
                             <h4 class="title">User Details</h4>
                         <div class="content table-responsive table-full-width">
-                            <table class="table table-border table-striped">
+                            <table class="table table-bordered table-striped">
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
@@ -77,7 +68,7 @@
                     
                             <h4 class="title">Product Details</h4>
                         <div class="content table-responsive table-full-width">
-                            <table class="table table table-striped">
+                            <table class="table table-bordered table-striped">
                                 <tr>
                                     <th>Order ID</th>
                                     <th>Product Name</th>
@@ -97,6 +88,8 @@
                         </div>
                     </div>
                   </div>
-                </div>
+                  <hr>
+                <a href="{{ route('user.profile')}}" class="btn btn-dark" >Back To User Profile</a>
 
+                </div>
 @endsection

@@ -67,7 +67,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 //Front controller
-Route::get('/','Front\homeController@index');
+Route::get('/','Front\homeController@index')->name('front.index');
 
 //user Registration
 Route::get('/user/register','Front\RegisterController@index')->name('userRegiater');
