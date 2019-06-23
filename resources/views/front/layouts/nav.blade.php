@@ -23,6 +23,7 @@
                         <a class="dropdown-item" href="{{ route('user.register') }}">Sign Up</a>
                         @else
                         <a class="dropdown-item" href="{{ route('user.logout') }}">Logout</a>
+                        <a class="dropdown-item" href="{{ route('user.profile') }}">MyProfile</a>
                         @endif
                     </div>
                 </li>
