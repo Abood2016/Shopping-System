@@ -1,6 +1,9 @@
 @extends('front.layouts.master')
 
 @section('content')
+<head>
+
+</head>
 <div class="row text-center">
 
 <header class="container">
@@ -34,7 +37,11 @@
 
     <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
-            <img class="card-img-top" src="{{asset('/uploads') . '/' . $product->image }}" alt="">
+            <div class="imge" style="background-image: url('{{asset('/uploads') . '/' . $product->image }}');width: 100%;
+    min-height: 150px;
+    background-position: center;
+        background-size: contain;
+    background-repeat: no-repeat;"><img class="card-img-top" src="" alt=""></div>
             <div class="card-body">
                 <h5 class="card-title">{{ $product->name }}</h5>
                 <p class="card-text">

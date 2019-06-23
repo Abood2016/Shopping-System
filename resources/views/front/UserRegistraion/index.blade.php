@@ -1,10 +1,36 @@
 @extends('front.layouts.master')
+<style>
+  body {
+      background-image: url('{{asset("544750.jpg")}}') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        height: 100% !important;
+        font-family: 'Numans', sans-serif !important;
+        background-attachment: fixed !important;
+    }  
+      .signup-form form {
+        margin-bottom: 15px!important;
+        background: #0000009e!important;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)!important;
+        padding: 30px!important;
+    }
 
+    .signup-form form h2 , .account{
+        margin: 0 0 15px;
+        color: #ffc107;
+    }
+    .button{
+        background-color:  #ffc107 !important;
+    }
+    .signup-form form a{
+        color: #007bff !important;
+    }
+</style>
 @section('content')
 <div class="signup-form">
     <form action="{{ route('user.register') }}" method="post">
         @csrf
-		<h2>Register</h2>
+		<h2 class=""> Register</h2>
 		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
         <div class="form-group {{$errors->has('name') ? 'has-error' : ''}}">
             <input type="text" class="form-control" name="name" placeholder="Name" >
@@ -27,9 +53,9 @@
             <span class="text-danger">{{ $errors->has('password') ? $errors->first('password') : ''}}</span>
         </div>
 		<div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block" style="background-color:#4A5678 !important">Register Now</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block button" >Register Now</button>
         </div>
-        <div class="text-center">Already have an account? <a href="{{ route('userLogin') }}">Sign in</a></div>
+        <div class="text-center account">Already have an account? <a href="{{ route('userLogin') }}">Sign in</a></div>
 
     </form>
 </div>

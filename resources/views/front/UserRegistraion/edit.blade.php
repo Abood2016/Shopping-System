@@ -1,5 +1,15 @@
 @extends('front.layouts.master')
+<style>
+  body {
+        background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        height: 100% !important;
+        font-family: 'Numans', sans-serif !important;
+        background-attachment: fixed !important;
+    }   
 
+</style>
 @section('content')
 <div class="signup-form">
     <form action="{{ route('user.update',['id' => $user->id]) }}" method="post">
