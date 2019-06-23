@@ -79,8 +79,7 @@
 
         </tbody>
     </table>
-
+<hr>
 </div>
-<br>
-<br>
-<br> @endsection
+
+@endsection
