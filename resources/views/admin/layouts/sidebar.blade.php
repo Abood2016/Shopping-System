@@ -38,6 +38,12 @@
                 <p>Users</p>
             </a>
         </li>
+        <li>
+            <a href="{{route('user.showMessages')}}">
+                <i class="ti-view-list-alt"></i>
+                <p>Messages</p>
+            </a>
+        </li>
     </ul>
 </div>
 </div>
