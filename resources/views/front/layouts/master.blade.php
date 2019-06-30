@@ -126,7 +126,6 @@
         }
             .card .img{
         
-    
     }
     </style>
     <meta charset="utf-8">
@@ -141,7 +140,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="{{asset('assets/css/heroic-features.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/contactUs.css')}}" rel="stylesheet">
 
+    @yield('style')
 </head>
 
 <body>
@@ -157,7 +158,7 @@
 
         @yield('content')
         <!-- Page Features -->
-
+            
         <!-- /.row -->
 
     </div>
@@ -174,55 +175,9 @@
     <br>
     <br>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="page-footer font-small cyan darken-3">
-
-        <!-- Footer Elements -->
-        <div class="body-footer">
-
-            <div class="container">
-
-                <!-- Grid row-->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 py-4">
-                        <div class="mb-2 flex-center text-center">
-
-                            <div><a href="https://www.facebook.com/lkhoya.l3aziz5?fref=hovercard&hc_location=none   ">Abed El Rahman Al Sarsak</a></div>
-                            <div><a href="https://www.facebook.com/trq98">THAER QANOO</a></div>
-                            <div><a href="https://www.facebook.com/yaseen.enaya.14">Yaseen Enaya</a></div>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row-->
-
-            </div>
-        </div>
-        <!-- Footer Elements -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-            <div class="">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-
-                </script>
-                , made with <i class="fa fa-heart heart"></i> by <a href="#">DarkCode</a>
-            </div>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-
-
-    <!-- Footer -->
-
+ 
+  @include('front.layouts.footer')
+  
 </body>
 
 </html>

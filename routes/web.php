@@ -49,6 +49,8 @@ Route::get('/','UserController@index')->name('user.index');
 Route::get('/active/{id}','UserController@active')->name('user.active');
 Route::get('/block/{id}','UserController@block')->name('user.block');
 Route::get('/show/{id}','UserController@show')->name('user.show');
+Route::get('contact','ContactController@show')->name('user.showMessages');
+Route::post('contact/delete/{id}','ContactController@destroy')->name('contact.destroy');
 });
 
       // Logout
@@ -68,7 +70,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 //Front controller
-Route::get('/','Front\homeController@index');
+Route::get('/','Front\homeController@index')->name('front.index');
+
+//Contact Routs
+Route::get('/contact','Front\ContactUsController@index')->name('user.contactUs');
+Route::post('contact/store','Front\ContactUsController@store')->name('contact.store');
+Route::get('contact','Front\ContactUsController@store')->name('contact.store');
 
 //user Registration
 Route::get('/user/register','Front\RegisterController@index')->name('userRegiater');
@@ -85,5 +92,12 @@ Route::get('user/edit/{id}','Front\RegisterController@edit')->name('user.edit');
 Route::post('user/update/{id}','Front\RegisterController@update')->name('user.update');
 
 Route::get('user/profile','Front\UserProfileController@index')->name('user.profile');
+Route::get('user/contact','Front\UserProfileController@showcontact')->name('user.contactUs');
 
 Route::get('user/order/{id}','Front\UserProfileController@show')->name('user.Profileshow');
+
+
+
+
+
+

@@ -1,4 +1,6 @@
-@extends('front.layouts.master') @section('content')
+@extends('front.layouts.master')
+
+ @section('content')
 <br>
 <h2>User Profile</h2>
 <hr>
@@ -79,8 +81,7 @@
 
         </tbody>
     </table>
-
+<hr>
 </div>
-<br>
-<br>
-<br> @endsection
+
+@endsection
